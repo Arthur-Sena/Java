@@ -1,6 +1,6 @@
 # Java
 
-## Convenção de código:
+## <a name=“Convenção”><a/> Convenção de código:
 A convenção de código do Java é um conjunto de regras recomendadas para escrever código Java que é fácil de ler, entender e manter. Essas regras foram definidas pela Oracle, a empresa que mantém a linguagem Java, e são amplamente seguidas pela comunidade de desenvolvedores Java.
 
 Aqui estão algumas das principais convenções de código do Java:
@@ -24,7 +24,7 @@ Essas são apenas algumas das convenções de código mais comuns no Java. Segui
 
 É importante lembrar que as convenções de código são apenas **recomendações** , e não regras obrigatórias. No entanto, seguir essas convenções pode ajudar a criar um padrão consistente em todo o seu código Java e também torná-lo mais fácil de compartilhar e colaborar com outros desenvolvedores.
 
-## Tipos primitivos:
+## <a name=“tiposPrimitivos”><a/> Tipos primitivos:
 Em Java, assim como na maioria das linguagens de programação, existem os tipos primitivos, que são os tipos de dados mais básicos e fundamentais da linguagem. Eles são utilizados para representar valores simples e são definidos pela própria linguagem.
 
 Java possui oito tipos primitivos diferentes: boolean, byte, char, short, int, long, float e double. Cada um desses tipos possui suas próprias características e faixa de valores permitidos, conforme será descrito a seguir.
@@ -73,6 +73,42 @@ No exemplo anterior, o valor da variável x é convertido em um valor inteiro ut
 Abaixo tem uma tabela, onde você pode visualizar mais facilmente as conversões que são implícitas e as que necessitam ser feitas de forma explícita.
 <div align="center">
   <img width="50%" title="Tabela de conversões implícitas/explicitas" src="https://github.com/Arthur-Sena/Java/assets/57300757/6f02c7d3-d59d-42a0-b050-cfd77ae86625)"/>
-<div>
+</div>
 
+## Para saber mais: a classe Scanner:
 
+A classe Scanner do Java é utilizada para ler dados de entrada em um programa Java. Esses dados podem ser lidos a partir de várias fontes de entrada, como arquivos, fluxos de entrada, Strings e até mesmo a entrada do usuário através do teclado, como vimos em aula.
+
+Ela oferece uma série de métodos para ler dados de diferentes tipos, como inteiros, números de ponto flutuante, strings e caracteres.
+
+Para utilizar a classe Scanner, primeiro é necessário importá-la no início do seu programa. Provavelmente ao incluir a mesma no código, a IDE já vai sugerir o import. Esse import ficará como descrito abaixo:
+```
+import java.util.Scanner;
+```
+
+Veja um exemplo básico de como utilizar a classe Scanner para ler dados distintos:
+
+```
+public class ExemploScanner {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite seu nome: ");
+        String nome = scanner.nextLine();
+        System.out.print("Digite sua idade: ");
+        int idade = scanner.nextInt();
+        System.out.print("Digite o valor que pretende investir esse mês: ");
+        double valor = scanner.nextDouble();
+
+        System.out.println(nome + " que tem " + idade + " anos, irá investir R$ " + valor + " esse mês.");
+
+        scanner.close();
+    }
+}
+```
+
+Nesse exemplo, primeiro importamos a classe Scanner e, em seguida, criamos uma instância dela passando o objeto `System.in` como parâmetro para indicar que queremos ler a entrada do usuário pelo teclado.
+
+Depois, usamos o método `nextLine()` para ler uma linha de texto. Além desse, utilizamos também o `nextInt()` para ler um número inteiro e o `nextDouble()` para ler um número decimal.
+
+Você pode encontrar a lista completa de métodos na [documentação oficial do Java](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html).
