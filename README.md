@@ -2,13 +2,23 @@
 
 Java é uma linguagem de programação amplamente usada para codificar aplicações Web. Ela tem sido uma escolha popular entre os desenvolvedores há mais de duas décadas, com milhões de aplicações Java em uso hoje. Java é uma linguagem multiplataforma, orientada a objetos e centrada em rede que pode ser usada como uma plataforma em si. É uma linguagem de programação rápida, segura e confiável para codificar tudo, desde aplicações móveis e software empresarial até aplicações de big data e tecnologias do servidor.
 
-## Documentação
+## Índice 
+
+* [Documentação](#Documentação)
+* [Convenção de código](#Convenção)
+* [Tipos Primitivos](#tiposPrimitivos)
+* [Casting](#Casting)
+* [Para saber mais: a classe Scanner](#Scanner)
+* [Classes e objetos](#Classes)
+* [Modificadores de acesso](#acesso-ao-projeto)
+
+## <a name=“Documentação”> Documentação</a>:
 
 A documentação do Java, conhecida como JavaDoc, é uma referência completa para todas as classes, interfaces e métodos disponíveis na plataforma Java. Ela está disponível online e pode ser acessada neste [site da Orcacle](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html).
 
 O JavaDoc é organizado em pacotes, que contêm diversas classes e interfaces relacionadas a alguma funcionalidade específica da linguagem. Cada classe e interface é documentada individualmente, com informações detalhadas sobre sua funcionalidade, uso e exemplos de código.
 
-## <a name=“Convenção”> Convenção de código<a/>:
+## <a name=“Convenção”> Convenção de código</a>:
 A convenção de código do Java é um conjunto de regras recomendadas para escrever código Java que é fácil de ler, entender e manter. Essas regras foram definidas pela Oracle, a empresa que mantém a linguagem Java, e são amplamente seguidas pela comunidade de desenvolvedores Java.
 
 Aqui estão algumas das principais convenções de código do Java:
@@ -32,7 +42,7 @@ Essas são apenas algumas das convenções de código mais comuns no Java. Segui
 
 É importante lembrar que as convenções de código são apenas **recomendações** , e não regras obrigatórias. No entanto, seguir essas convenções pode ajudar a criar um padrão consistente em todo o seu código Java e também torná-lo mais fácil de compartilhar e colaborar com outros desenvolvedores.
 
-## <a name=“tiposPrimitivos”> Tipos primitivos<a/>:
+## <a name=“tiposPrimitivos”> Tipos primitivos</a>:
 Em Java, assim como na maioria das linguagens de programação, existem os tipos primitivos, que são os tipos de dados mais básicos e fundamentais da linguagem. Eles são utilizados para representar valores simples e são definidos pela própria linguagem.
 
 Java possui oito tipos primitivos diferentes: boolean, byte, char, short, int, long, float e double. Cada um desses tipos possui suas próprias características e faixa de valores permitidos, conforme será descrito a seguir.
@@ -53,7 +63,7 @@ Java possui oito tipos primitivos diferentes: boolean, byte, char, short, int, l
 
 - double: O tipo double é similar o float, entretanto ele ocupa 64 bits de memória e pode representar números decimais com até 15 dígitos.
 
-## Casting:
+## <a name=“Casting”> Casting</a>:
 
 Casting é um recurso utilizado em Java para converter um tipo de dado em outro. Essa conversão pode ser feita de forma automática pelo compilador (conversão implícita), quando o tipo de dado de destino é compatível com o tipo de dado de origem, ou de forma manual (conversão explícita), utilizando o operador de casting.
 
@@ -83,7 +93,7 @@ Abaixo tem uma tabela, onde você pode visualizar mais facilmente as conversões
   <img width="50%" title="Tabela de conversões implícitas/explicitas" src="https://github.com/Arthur-Sena/Java/assets/57300757/6f02c7d3-d59d-42a0-b050-cfd77ae86625)"/>
 </div>
 
-## Para saber mais: a classe Scanner:
+## <a name=“Scanner”> Para saber mais: a classe Scanner</a>:
 
 A classe Scanner do Java é utilizada para ler dados de entrada em um programa Java. Esses dados podem ser lidos a partir de várias fontes de entrada, como arquivos, fluxos de entrada, Strings e até mesmo a entrada do usuário através do teclado, como vimos em aula.
 
@@ -121,7 +131,7 @@ Depois, usamos o método `nextLine()` para ler uma linha de texto. Além desse, 
 
 Você pode encontrar a lista completa de métodos na [documentação oficial do Java](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html).
 
-## Classes e objetos
+## <a name=“Classes”> Classes e objetos</a>:
 
 Uma classe é uma estrutura que define um tipo de objeto. A classe é como um molde, que define quais são as características (atributos) e comportamentos (métodos) que os objetos desse tipo vão possuir. Por exemplo, podemos definir uma classe chamada `Pessoa` que tenha os atributos `nome` e `idade`, além do método `fazAniversario()`
 
@@ -185,7 +195,7 @@ pessoa2.fazAniversario();
 
 System.out.println("A idade agora é: " +pessoa2.idade);
 ```
-## Modificadores de acesso
+## <a name=“Modificadores”> Modificadores de acesso</a>:
 
 Em Java, os modificadores de acesso são palavras-chave que definem o nível de visibilidade de classes, atributos e métodos, sendo que eles ajudam a garantir a segurança e encapsulamento do código.
 
