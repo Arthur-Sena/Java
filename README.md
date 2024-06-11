@@ -4,13 +4,13 @@ Java é uma linguagem de programação amplamente usada para codificar aplicaç�
 
 ## Índice 
 
-* [Documentação](#Documentação)
-* [Convenção de código](#Convenção)
-* [Tipos Primitivos](#tiposPrimitivos)
-* [Casting](#Casting)
-* [Para saber mais: a classe Scanner](#Scanner)
-* [Classes e objetos](#Classes)
-* [Modificadores de acesso](#acesso-ao-projeto)
+* [Documentação](#-documentação)
+* [Convenção de código](#-convenção-de-código)
+* [Tipos Primitivos](#-tipos-primitivos)
+* [Casting](#-casting)
+* [Para saber mais: a classe Scanner](#-para-saber-mais-a-classe-scanner)
+* [Classes e objetos](#-classes-e-objetos)
+* [Modificadores de acesso](#-modificadores-de-acesso)
 
 ## <a name=“Documentação”> Documentação</a>:
 
