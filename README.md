@@ -5,13 +5,20 @@ Java é uma linguagem de programação amplamente usada para codificar aplicaç�
 ## Índice 
 
 * [Documentação](#-documentação)
-* [Convenção de código](#-convenção-de-código)
+* [Convenção de Código](#-convenção-de-código)
 * [Tipos Primitivos](#-tipos-primitivos)
 * [Casting](#-casting)
+  * [Casting Implícito](#casting-implícito)
+  * [Casting Explícito](#casting-explícito)
 * [Para saber mais: a classe Scanner](#-para-saber-mais-a-classe-scanner)
-* [Classes e objetos](#-classes-e-objetos)
-* [Modificadores de acesso](#-modificadores-de-acesso)
+* [Classes e Objetos](#-classes-e-objetos)
+* [Modificadores de Acesso](#-modificadores-de-acesso)
+  * [Public](#public)
+  * [Default (Package-private)](#default-package-private)
+  * [Private](#private)
 * [Herança](#herança)
+  * [Herança Multipla](#herança-múltipla)
+* [Anotações no Java](#anotações-no-java)
 
 ## <a name=“Documentação”> Documentação</a>:
 
@@ -374,3 +381,13 @@ public class ContaCorrentePessoaFisica extends ContaCorrente {
 ```
 
 No código anterior, a classe `ContaCorrentePessoaFisica` está herdando de `ContaCorrente`, que por sua vez herda da classe `Conta`, ou seja, indiretamente a classe `ContaCorrentePessoaFisica` vai herdar de `Conta`, pois sua superclasse herda dela.
+
+## Anotações no Java
+
+As anotações, também conhecidas como annotations, são uma forma de adicionar configurações ao código Java de uma maneira bem simples. Elas são usadas para fornecer informações adicionais sobre o código, como o significado de uma classe, um método ou um atributo.
+
+No Java, as anotações são definidas com o uso do símbolo "@" seguido do nome da anotação. Por exemplo, a anotação `@Deprecated` é usada para indicar que um método ou classe está obsoleto e não deve ser mais utilizado. Outra anotação muito útil é a `@Override`, conforme foi demonstrado no último vídeo, que indica que um método está sobrescrevendo o mesmo método definido na sua classe mãe.
+
+Diversas especificações e frameworks Java, como Hibernate, Bean Validation e Spring, utilizam anotações. Por exemplo, no Bean Validation a anotação `@NotNull` é usada para validar que um atributo não seja nulo.
+
+As anotações são muito úteis e comuns em aplicações Java, sendo importante que você esteja familiarizado com esse recurso, pois certamente o utilizará bastante em seus projetos.
