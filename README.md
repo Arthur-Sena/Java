@@ -21,6 +21,7 @@ Java é uma linguagem de programação amplamente usada para codificar aplicaç�
   * [Protected](#protected)
 * [Anotações no Java](#anotações-no-java)
 * [Interfaces](#interfaces)
+* [Var](#var)
 
 ## <a name=“Documentação”> Documentação</a>:
 
@@ -549,3 +550,32 @@ Nesse exemplo, estamos criando uma classe chamada CalculadoraImposto, que tem um
 Repare que o método `calcularImposto` recebe um parâmetro do tipo `Tributavel`. Ao declarar uma variável com o tipo de uma interface, como é feito nesse método, podemos atribuir a essa variável qualquer objeto que implemente essa interface, ou seja, tanto um objeto do tipo `Servico` quanto `Produto`. Para ambos os casos, a `CalculadoraImposto` irá chamar o método implementado na classe específica. Ou seja, para um produto, irá chamar o método getTotalImposto implementado na classe Produto. E para um serviço, irá chamar o método getTotalImposto implementado na classe Servico.
 
 Isso é muito útil quando queremos tratar vários objetos de classes diferentes de forma semelhante, permitindo que diferentes classes possam ser tratadas de maneira padronizada, facilitando a manutenção e extensão do código. Esse é mais um exemplo de aplicação do polimorfismo em Java, mas agora com a utilização de interfaces.
+
+## Var
+
+A partir da versão 10 do Java, foi adicionada uma nova funcionalidade para a declaração de variáveis chamada var. Essa nova palavra-chave permite que o compilador infira automaticamente o tipo da variável com base no valor atribuído a ela. Isso pode tornar o código mais limpo e legível, além de reduzir a digitação de código redundante.
+
+### Sintaxe básica
+A sintaxe básica para declarar uma variável com var é a seguinte:
+
+```
+var nomeDaVariavel = valorInicial;
+```
+
+Onde `nomeDaVariavel` é o nome que você quer dar à variável e `valorInicial` é o valor que você quer atribuir a ela. O tipo da variável será inferido automaticamente pelo compilador com base no valor atribuído.
+
+Exemplo:
+
+```
+var numero = 10;
+```
+
+### Limitações
+
+A declaração de variáveis com `var` possui algumas limitações:
+
+- O tipo da variável deve ser inferido automaticamente pelo compilador. Isso significa que não é possível utilizar `var` em variáveis cujo tipo não possa ser inferido automaticamente.
+- Não é possível usar `var` em variáveis sem valor inicial. É necessário atribuir um valor à variável na mesma linha em que ela é declarada.
+
+A declaração de variáveis com `var` é uma funcionalidade relativamente nova no Java, mas que pode trazer diversos benefícios para o código, como a redução de digitação e melhor legibilidade do código. No entanto, é importante lembrar que existem limitações e que nem sempre é possível utilizar esse recurso.
+Nesse exemplo, a variável numero será inferida como sendo do tipo int, já que o valor atribuído é um número inteiro.
